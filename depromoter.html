@@ -1,0 +1,558 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamQash</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background: #004b61;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero h1 span {
+    color: #00cc99;
+    font-size: 2.5rem; 
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 1.1rem;
+}
+.hero h1{
+    color: white;
+    font-size: 2.5rem; 
+    margin-bottom: 10px;
+}
+
+
+
+/* Features Section */
+.features {
+    padding: 40px 20px;
+    background: #f4f4f4;
+}
+
+.features .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.feature-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 300px;
+    padding: 20px;
+    background: #c9f1e7;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+}
+```
+/* Audio Section */
+#audio {
+    padding: 50px 20px;
+    text-align: center;
+    background: #e6f7ff;
+}
+.country-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.country-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.country-btn:hover {
+    background: #0056b3;
+}
+#audio-container {
+    margin-top: 20px;
+    animation: fadeIn 1s ease;
+}
+.audio-hidden {
+    display: none;
+}
+ 
+ #mission {
+    padding: 50px 20px;
+    background: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+.mission-list {
+    display: column;
+    max-width: 400;
+   
+    
+}
+.mission-item {
+    background: #ffeaff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+}
+.mission-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* How It Works Section */
+.how-it-works {
+  background: #e9f5ff;
+  padding: 2rem 0;
+  align-text: center;
+}
+.steps {
+  display: column;
+  padding: 20px;
+  margin-top: 20px;
+}
+.step {
+  text-align: center;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+.step i {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+/* Testimonials Section */
+.testimonials {
+  background: #f9f9f9;
+  padding: 2rem 0;
+  text-align: center;
+}
+.testimonial-list {
+  display: flex;
+  gap: 1rem;
+}
+.testimonial-item {
+  flex: 1;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.testimonial-item h4 {
+  margin-top: 1rem;
+  font-style: italic;
+}
+#faq {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+  text-align: center;
+}
+
+#faq h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+  font-size: 1.5rem;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.faq-answer {
+  display: none;
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .faq-question {
+    font-size: 1.3rem;
+  }
+
+  .faq-answer {
+    font-size: 1rem;
+  }
+}
+/* Animation for fade-in */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .faq-container {
+    justify-content: center;
+  }
+
+  .faq-item {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+.icony {
+    font-size: 48px;
+    color: #ff0049;
+}
+.iconi {
+    font-size: 48px;
+    color: #7015ff;
+}
+.iconf {
+    font-size: 48px;
+    color: #086416;
+}
+.iconb {
+    font-size: 48px;
+    color: #ff15e7;
+}
+.iconq {
+    font-size: 48px;
+    color: #ffdc00;
+}
+.icont {
+    font-size: 48px;
+    color: #00abff;
+}
+/* Header Styling */
+.header-block {
+    position: fixed; /* Fix the header at the top */
+    top: 0; /* Ensure it sticks to the top */
+    left: 0; /* Align with the left edge */
+    width: 100%; /* Span full width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaeaff; /* Fixed color syntax */
+    color: #5000ff;
+    padding: 10px 20px;
+    border-bottom: 2px solid #5000ff;
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+/* Logo and Title */
+.header-block h1 {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin: 0;
+}
+
+.header-block h1 i {
+    margin-right: 10px;
+    color: #5000ff;
+}
+
+/* Action Buttons */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Register Button */
+.register-btn {
+    background-color: #158cff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.register-btn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.register-btn:hover {
+    background-color: #005bb5;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    cursor: pointer;
+    font-size: 25px;
+    color: #5000ff;
+    display: block; /* Always visible */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-actions {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .register-btn {
+        display: block; /* Ensure the button is always visible */
+    }
+}
+    </style>
+</head>
+<body>
+   <div class="header-block">
+    <h1><i class="fa-solid fa-coins"></i> STREAMQASH</h1>
+    <div class="header-actions">
+        <div class="register-btn">
+            <a href="https://www.streamwa-ve.com/user/register.php?ref=DEPROMOTER12">REGISTER</a>
+        </div>
+        <div class="hamburger-menu">☰</div>
+    </div>
+</div>
+    <!-- Header Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Accelerate Your Online Business with <span>"StreamQash"</span></h1>
+            <p>
+                Discover StreamQash  – your partner in accelerating online business growth. 
+                Whether you're launching, scaling, or optimizing, StreamQash  provides intuitive tools 
+                and insights to streamline your operations.
+            </p>
+            <div class="cta-buttons">
+               <a href="https://www.streamwa-ve.com/user/register.php?ref=DEPROMOTER12" style="display: inline-block; margin: 10px 5px; padding: 10px 20px; background: #008cba; color: white; border: none; border-radius: 5px; text-decoration: none; font-size: 1rem;">
+        Get Started
+    </a>
+    <a href="https://wa.me/254717582713" style="display: inline-block; margin: 10px 5px; padding: 10px 20px; background: #00f117; color: white; border: none; border-radius: 5px; text-decoration: none; font-size: 1rem;">
+        <i class="fab fa-whatsapp"></i> WhatsApp us
+    </a> 
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>FEATURES</h2>
+            <p>The StreamQash  Business features that are completely easy-to-use for any user, even for a beginner.</p>
+            <div class="feature-cards">
+                <div class="card">
+                     <div class="iconi"><i class="fa-brands fa-instagram"></i></div>
+                    <h3> Promoted Instagram Reels</h3>
+                    <p>Watch an entertaining Instagram Reel of choice, be promoted, and get paid at the same time.</p>
+                </div>
+                <div class="card">
+                    <div class="icony"><i class="fa-brands fa-youtube"></i></div><h3> Promoted YouTube Videos</h3>
+                    <p>Watch various educational YouTube videos and get paid per video.</p>
+                </div>
+                <div class="card">
+                     <div class="icont"><i class="fa-solid fa-video"></i></div>
+                    <h3> Promoted TikTok Videos</h3>
+                    <p>Funny and educational TikTok videos will be posted, and you get paid weekly.</p>
+                </div>
+                <div class="card">
+                     <div class="iconq"><i class="fa-solid fa-clipboard"></i></div>
+                    <h3>Trivia Questions</h3>
+                    <p>Answer simple questions correctly and get rewarded.</p>
+                </div>
+                <div class="card">
+                     <div class="iconb"><i class="fa-solid fa-book"></i> </div>
+                    <h3> Financial eBooks</h3>
+                    <p>Access basic and premium eBooks covering networking strategies.</p>
+                </div>
+                <div class="card">
+                     <div class="iconf"><i class="fa-solid fa-signal"></i></div>
+                    <h3> Forex Classes</h3>
+                    <p>Learn the basics of Forex trading and build your confidence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="audio">
+    <h2>Audio Summaries</h2>
+    <p>Click on your country to get the audio summary:</p>
+    <div class="country-buttons">
+        <button class="country-btn" data-country="kenya">Kenya</button>
+        <button class="country-btn" data-country="Nigeria">Nigeria</button>
+        <button class="country-btn" data-country="Ghana">Ghana</button>
+    </div>
+    <div id="audio-container" class="audio-hidden">
+        <audio controls id="audio-player">
+            <source src="">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</section>
+  <section id="mission" class="mission">
+    <div class="container">
+      <h2>Our Mission</h2>
+      <p>Our mission is to make our work meaningful and impactful.</p>
+      <div class="mission-list">
+        <div class="mission-item">
+          <h3>Ultra Flexible & Secure</h3>
+          <p>The StreamQash  code is well-structured and secure.</p>
+        </div>
+        <div class="mission-item">
+          <h3>Easy Customization</h3>
+          <p>Offers flexibility for users to tailor the platform to their needs.</p>
+        </div>
+        <div class="mission-item">
+          <h3>Fast Response</h3>
+          <p>The platform ensures quick responses for a smooth experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+   <section id="how-it-works" class="how-it-works">
+    <div class="container">
+      <h2>How It Works</h2>
+      <div class="steps">
+        <div class="step">
+          <i class="fas fa-user-plus"></i>
+          <h3>Step 1: Sign Up</h3>
+          <p>Create a free account in just a few minutes.</p>
+        </div>
+        <div class="step">
+          <i class="fas fa-play-circle"></i>
+          <h3>Step 2: Engage</h3>
+          <p>Watch videos, answer questions, and complete tasks.</p>
+        </div>
+        <div class="step">
+          <i class="fas fa-wallet"></i>
+          <h3>Step 3: Get Paid</h3>
+          <p>Withdraw your earnings directly to your wallet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2>Meet Our Happy Users</h2>
+      <div class="testimonial-list">
+        <div class="testimonial-item">
+          <p>"StreamQash  has completely changed the way I earn online. It's fast, reliable, and easy to use!"</p>
+          <h4>- George Mumo🇰🇪</h4>
+        </div>
+        <div class="testimonial-item">
+          <p>"I never thought making money online could be this simple. Highly recommend it!"</p>
+          <h4>- Mercybee 🇺🇸</h4>
+        </div>
+        <div class="testimonial-item">
+          <p>"The best platform for earning online. Tasks are fun and rewarding."</p>
+          <h4>- Blinks🇬🇭</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="faq">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleAnswer(0)">
+        <h3>What is StreamQash Agencies? <i class="fa-solid fa-chevron-down"></i></h3>
+      </div>
+      <div id="answer-0" class="faq-answer">
+        <p>StreamQash Agencies is a platform that allows you to earn money online through various tasks, including affiliate marketing, watching videos, and completing simple surveys.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleAnswer(1)">
+        <h3>How do I Withdraw from StreamQash? <i class="fa-solid fa-chevron-down"></i></h3>
+      </div>
+      <div id="answer-1" class="faq-answer">
+        <p>In StreamQash you can withdraw your balance anytime you want. StreamQash supports various payments methods including mobile money of all supported countries, banks, PayPal and many more.</p>
+      </div>
+    </div>
+    <!-- Add more FAQ items as needed -->
+  </div>
+</section>
+<section style="padding: 20px; background: #004b61; color: #fff; text-align: center;">
+    <h2 style="font-size: 1.8rem; margin-bottom: 20px;">Contact Us</h2>
+    <p><i class="fa-solid fa-envelope"></i> Email: depromoter@gmail.com</p>
+    <p><i class="fa-solid fa-phone"></i> Phone: +254 717 582 713</p>
+    <p>Working Hours: Everyday 24 hours</p>
+</section>
+<footer style="padding: 20px; background: #222; color: #fff; text-align: center;">
+    <p>&copy; 2024 StreamQash. Designed with ❤️ by NovoDinero.</p>
+    <p>All rights reserved.</p>
+</footer>
+<script>
+     // JavaScript for FAQ Toggle
+function toggleAnswer(index) {
+  const answer = document.getElementById(`answer-${index}`);
+  const displayStatus = answer.style.display;
+
+  if (displayStatus === "none" || displayStatus === "") {
+    answer.style.display = "block";
+  } else {
+    answer.style.display = "none";
+  }
+}
+     // Handle Country Audio Selection
+const countryButtons = document.querySelectorAll('.country-btn');
+const audioContainer = document.getElementById('audio-container');
+const audioPlayer = document.getElementById('audio-player');
+
+const audioSources = {
+    kenya: 'Ksummary.opus',
+    Nigeria: 'Nsummary.opus',
+    Ghana: 'Gsummary.opus'
+};
+
+countryButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const country = button.dataset.country;
+        if (audioSources[country]) {
+            audioPlayer.src = audioSources[country];
+            audioContainer.classList.remove('audio-hidden');
+            audioPlayer.play();
+        }
+    });
+}); 
+</script>
+</body>
+</html>
